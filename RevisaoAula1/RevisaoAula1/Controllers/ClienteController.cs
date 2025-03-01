@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using RevisaoAula1.Application.Interfaces;
 
-namespace RevisaoAula1.Presentation.Controllers
+namespace revisao.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

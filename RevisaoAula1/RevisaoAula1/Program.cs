@@ -1,9 +1,9 @@
 using Microsoft.EntityFrameworkCore;
+using revisao.data.AppData;
+using revisao.data.Repository;
 using RevisaoAula1.Application.Interfaces;
 using RevisaoAula1.Application.Services;
 using RevisaoAula1.Domain.Interfaces;
-using RevisaoAula1.Infraestructure.Data.AppData;
-using RevisaoAula1.Infraestructure.Data.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 

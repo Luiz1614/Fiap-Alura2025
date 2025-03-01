@@ -2,20 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using RevisaoAula1.Infraestructure.Data.AppData;
+using revisao.data.AppData;
 
 #nullable disable
 
-namespace RevisaoAula1.Migrations
+namespace revisao.data.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    [Migration("20250222012242_initDb")]
-    partial class initDb
+    partial class ApplicationContextModelSnapshot : ModelSnapshot
     {
-        /// <inheritdoc />
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

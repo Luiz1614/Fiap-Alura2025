@@ -1,8 +1,8 @@
-﻿using RevisaoAula1.Domain.Entities;
+﻿using revisao.data.AppData;
+using RevisaoAula1.Domain.Entities;
 using RevisaoAula1.Domain.Interfaces;
-using RevisaoAula1.Infraestructure.Data.AppData;
 
-namespace RevisaoAula1.Infraestructure.Data.Repository;
+namespace revisao.data.Repository;
 
 public class ClientRepository : IClientRepository
 {
