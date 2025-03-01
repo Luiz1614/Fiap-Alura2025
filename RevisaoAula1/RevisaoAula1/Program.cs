@@ -1,22 +1,8 @@
-using Microsoft.EntityFrameworkCore;
-using revisao.data.AppData;
-using revisao.data.Repository;
-using RevisaoAula1.Application.Interfaces;
-using RevisaoAula1.Application.Services;
-using RevisaoAula1.Domain.Interfaces;
+using revisao.IoC;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Configurar o ApplicationContext
-builder.Services.AddDbContext<ApplicationContext>(options =>
-{
-    var connectionString = builder.Configuration.GetConnectionString("MySql");
-    var serverVersion = ServerVersion.AutoDetect(connectionString);
-    options.UseMySql(connectionString, serverVersion);
-});
-
-builder.Services.AddTransient<IClientRepository, ClientRepository>();
-builder.Services.AddScoped<IClientService, ClientService>();
+Bootstrap.Start(builder.Services, builder.Configuration);
 
 // Configurar controllers e Swagger
 builder.Services.AddControllers();

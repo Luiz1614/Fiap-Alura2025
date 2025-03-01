@@ -20,6 +20,7 @@
     <ProjectReference Include="..\revisao.application\revisao.application.csproj" />
     <ProjectReference Include="..\revisao.data\revisao.data.csproj" />
     <ProjectReference Include="..\revisao.domain\revisao.domain.csproj" />
+    <ProjectReference Include="..\revisao.IoC\revisao.IoC.csproj" />
   </ItemGroup>
 
 </Project>
